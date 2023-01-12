@@ -1,0 +1,2 @@
+# JavaMandelBrot
+ Java Mandelbrot viewer
