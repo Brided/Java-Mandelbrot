@@ -1,5 +1,7 @@
 plugins {
+    id 'java'
     id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
 }
 
 repositories {
@@ -10,6 +12,11 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
 
     implementation 'com.google.guava:guava:31.1-jre'
+}
+
+javafx {
+    version = "17"
+    modules = [ 'javafx.controls' ]
 }
 
 application {

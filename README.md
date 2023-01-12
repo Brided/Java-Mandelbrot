@@ -1,2 +1,2 @@
 # JavaMandelBrot
- Java Mandelbrot viewer
+ Mandelbrot fractal viewer built using java.
