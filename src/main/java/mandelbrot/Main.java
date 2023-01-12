@@ -18,8 +18,16 @@ public class Main extends Application {
 
         scene.setOnKeyPressed(event -> {
             if (event.getCode() == KeyCode.ENTER) {
-                mandelbrot.paintBlack();
+                mandelbrot.updateImage();
             }
+        });
+
+        scene.widthProperty().addListener((obs, oldVal, newVal) -> {
+            mandelbrot.setWidth(newVal.intValue());
+        });
+
+        scene.heightProperty().addListener((obs, oldVal, newVal) -> {
+            mandelbrot.setHeight(newVal.intValue());
         });
 
         primaryStage.setTitle("Mandelbrot");
